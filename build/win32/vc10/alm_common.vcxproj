@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC902307-4EEB-4731-983B-C78FE1970245}</ProjectGuid>
+    <RootNamespace>TestForProduct</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\bin\tmp\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\bin\tmp\$(ProjectName)\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\bin\tmp\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\bin\tmp\$(ProjectName)\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/TestForProduct.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\tmp\Debug/TestForProduct.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <AdditionalIncludeDirectories>..\..\..\src\alm_common;..\..\..\src\alm_common\base;..\..\..\src\alm_common\cmd;..\..\..\src\alm_common\util;..\..\..\src\alm_common\base\os_adapter;..\..\..\src\alm_common\base\os_adapter\thread;..\..\..\src\alm_common\base\os_adapter\date;..\..\..\src\alm_common\base\os_adapter\memory;..\..\..\src\alm_common\base\os_adapter\mutex;..\..\..\src\alm_common\base\os_adapter\timer;..\..\..\src\alm_common\base\os_adapter\date\win32;..\..\..\src\alm_common\base\os_adapter\mutex\win32;..\..\..\src\alm_common\base\os_adapter\timer\win32;..\..\..\src\alm_common\base\os_adapter\date\linux;..\..\..\src\alm_common\base\os_adapter\mutex\linux;..\..\..\src\alm_common\base\os_adapter\timer\linux;..\..\..\src\cmd_base;..\..\..\src\cmd_base\base;..\..\..\src\cmd_base\test;..\..\..\src\cmd_base\para;..\..\..\src\cmd_base\cfg;..\..\..\src\cmd_base\cmd;..\..\..\src\cmd_base\cmd\cmdfn;..\..\..\src\cmd_base\cmd;..\..\..\src\cmd_base\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Lib />
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/TestForProduct.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/TestForProduct.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\tmp\Release/TestForProduct.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CallingConvention>Cdecl</CallingConvention>
+      <AdditionalIncludeDirectories>..\..\..\src\alm_common;..\..\..\src\alm_common\base;..\..\..\src\alm_common\cmd;..\..\..\src\alm_common\util;..\..\..\src\alm_common\base\os_adapter;..\..\..\src\alm_common\base\os_adapter\thread;..\..\..\src\alm_common\base\os_adapter\date;..\..\..\src\alm_common\base\os_adapter\memory;..\..\..\src\alm_common\base\os_adapter\mutex;..\..\..\src\alm_common\base\os_adapter\timer;..\..\..\src\alm_common\base\os_adapter\date\win32;..\..\..\src\alm_common\base\os_adapter\mutex\win32;..\..\..\src\alm_common\base\os_adapter\timer\win32;..\..\..\src\alm_common\base\os_adapter\date\linux;..\..\..\src\alm_common\base\os_adapter\mutex\linux;..\..\..\src\alm_common\base\os_adapter\timer\linux;..\..\..\src\cmd_base;..\..\..\src\cmd_base\base;..\..\..\src\cmd_base\test;..\..\..\src\cmd_base\para;..\..\..\src\cmd_base\cfg;..\..\..\src\cmd_base\cmd;..\..\..\src\cmd_base\cmd\cmdfn;..\..\..\src\cmd_base\cmd;..\..\..\src\cmd_base\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/TestForProduct.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\memory\os_memory.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\os.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\thread\os_thread.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\mutex\os_mutex.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\mutex\win32\os_mutex_win32.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\mutex\linux\os_mutex_linux.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\date\os_date.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\date\win32\os_date_win32.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\date\linux\os_date_linux.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\timer\os_timer.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\timer\win32\os_timer_win32.c" />
+    <ClCompile Include="..\..\..\src\alm_common\base\os_adapter\timer\linux\os_timer_linux.c" />
+    <ClCompile Include="..\..\..\src\alm_common\util\alm_util.c" />
+    <ClCompile Include="..\..\..\src\alm_common\cmd\alm_cmd.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\memory\os_memory.h" />
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\os.h" />
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\thread\os_thread.h" />
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\mutex\os_mutex.h" />
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\mutex\os_mutex_base.h" />
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\date\os_date.h" />
+    <ClInclude Include="..\..\..\src\alm_common\base\os_adapter\timer\os_timer.h" />
+    <ClInclude Include="..\..\..\src\alm_common\util\alm_util.h" />
+    <ClInclude Include="..\..\..\src\alm_common\cmd\alm_cmd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="cmd_base.vcxproj">
+      <Project>{5ae6799d-7349-4333-925e-dc85a746de8b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
