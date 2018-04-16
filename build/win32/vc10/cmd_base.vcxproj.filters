@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="util">
+      <UniqueIdentifier>{79c8ce71-9ea8-43b6-8f8b-931c8180c193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{769a2d73-e968-48a5-806d-bd74c505c616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\case_example">
+      <UniqueIdentifier>{95a19821-6322-47a1-9e51-3313ef31432e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{83573980-70f3-4b1a-ba69-930825365bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd\cmd_dflt">
+      <UniqueIdentifier>{8ccc01c5-96ba-48f2-809a-7c0d22128b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd\cmdfn">
+      <UniqueIdentifier>{d7098ca8-0eb0-4c52-975c-c93e0d0f2e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{79e54d5e-4874-4af7-84ee-59b60a4b7cab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="para">
+      <UniqueIdentifier>{31b70482-fab3-4793-a626-bd8e39c5fd62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{5feab796-028c-43ba-8502-f149be6854df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assoc">
+      <UniqueIdentifier>{b25c9762-3466-41a7-821c-48e35a6c7ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assoc\value">
+      <UniqueIdentifier>{fe3262da-585f-4bcc-a55c-8d5ced3f7d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assoc\obj">
+      <UniqueIdentifier>{141639d5-46a9-4161-8508-02888140e6cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assoc\fact">
+      <UniqueIdentifier>{2c9f5c7a-df26-41d5-8e9b-01158aa45d8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\cmd_base\util\util.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\test\test.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\test\case_example\case_example.c">
+      <Filter>test\case_example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\cmd\cmd.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\cmd\cmd_dflt\cmddflt.c">
+      <Filter>cmd\cmd_dflt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\cmd\cmdfn\cmdfn.c">
+      <Filter>cmd\cmdfn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\para\para.c">
+      <Filter>para</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\cfg\cfg.c">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\cfg\cfg_common.c">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\assoc\value\value.c">
+      <Filter>assoc\value</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cmd_base\assoc\obj\obj.c">
+      <Filter>assoc\obj</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\cmd_base\util\util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\test\test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\test\case_example\case_example.h">
+      <Filter>test\case_example</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\cmd\cmd.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\cmd\cmd_dflt\cmddflt.h">
+      <Filter>cmd\cmd_dflt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\cmd\cmdfn\cmdfn.h">
+      <Filter>cmd\cmdfn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\base\base.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\base\def.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\para\para.h">
+      <Filter>para</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\cfg\cfg.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\cfg\cfg_common.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\assoc\assoc.h">
+      <Filter>assoc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\assoc\value\value.h">
+      <Filter>assoc\value</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\assoc\obj\obj.h">
+      <Filter>assoc\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cmd_base\assoc\fact\fact.h">
+      <Filter>assoc\fact</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\cmd_base\cmd\cmd.inc">
+      <Filter>cmd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
