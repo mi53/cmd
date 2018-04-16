@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lic_inc">
+      <UniqueIdentifier>{467da550-4b00-497f-b3ff-12cc357fc003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="case">
+      <UniqueIdentifier>{c24b6a65-f7b9-40e9-834f-61787641080b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{97c303f1-d10f-4aa7-94b2-569cdf6a107e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{a4893b1c-2b14-4d72-bfa3-365a750eb780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{893eae19-8e18-494a-915b-355c14c1fd50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\test_r5c01\lic_inc\lic_inc.c">
+      <Filter>lic_inc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\case\case.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\case\case_act.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\case\case_esn.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\cmd\cmdimpl.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\callback\callback.c">
+      <Filter>callback</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\main.c" />
+    <ClCompile Include="..\..\..\src\test_r5c01\case\case_checkitem_ALM_CompareLicenseKey.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\cmd\cmdtool.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c01\lic_inc\lic_key.c">
+      <Filter>lic_inc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\test_r5c01\lic_inc\lic_inc.h">
+      <Filter>lic_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\case\case.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\case\case_act.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\case\case_cdts.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\case\case_esn.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\cmd\cmd_r5.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\cfg\cfg_r5.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\callback\callback.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\case\case_checkitem_ALM_CompareLicenseKey.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c01\cmd\cmdtool.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\test_r5c01\cmd\cmddef.inc">
+      <Filter>cmd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
