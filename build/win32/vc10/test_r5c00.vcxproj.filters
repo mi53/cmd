@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lic_inc">
+      <UniqueIdentifier>{109060d9-a3d0-43eb-af8f-f646d17748e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="case">
+      <UniqueIdentifier>{e6185f86-81f8-47bb-8a85-54add177b62e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{ad304fa3-1214-4293-8a7c-60feeff5b320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{fca357c1-4f5a-4808-9d97-15761d9bd389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{290c054c-8172-4b12-8727-d18a21ac631d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\test_r5c00\lic_inc\lic_inc.c">
+      <Filter>lic_inc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\case\case.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\case\case_act.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\case\case_esn.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\cmd\cmdimpl.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\callback\callback.c">
+      <Filter>callback</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\main.c" />
+    <ClCompile Include="..\..\..\src\test_r5c00\lic_inc\lic_key.c">
+      <Filter>lic_inc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c00\cmd\cmdtool.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\test_r5c00\lic_inc\lic_inc.h">
+      <Filter>lic_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\case\case.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\case\case_act.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\case\case_cdts.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\case\case_esn.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\cmd\cmd_r5.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\cfg\cfg_r5.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\callback\callback.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c00\cmd\cmdtool.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\test_r5c00\cmd\cmddef.inc">
+      <Filter>cmd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
