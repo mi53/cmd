@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lic_inc">
+      <UniqueIdentifier>{63ceed05-5c38-4ac1-9114-a142dff9ade6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="case">
+      <UniqueIdentifier>{fbd0ae60-04bf-49c9-98ea-3b1910cd110c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{98460186-7d97-4c04-9f15-69b652d490d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{36ba5267-53bc-4162-9504-a6409a287d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{f0f18ff0-f8fb-4e4a-b08a-c4ce23739427}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\test_r5c10\lic_inc\lic_inc.c">
+      <Filter>lic_inc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c10\case\case.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c10\cmd\cmdimpl.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c10\callback\callback.c">
+      <Filter>callback</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r5c10\main.c" />
+    <ClCompile Include="..\..\..\src\test_r5c10\case\case_ALM_StateMgrQueryBboms.c">
+      <Filter>case</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\test_r5c10\lic_inc\lic_inc.h">
+      <Filter>lic_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c10\case\case.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c10\cmd\cmd_r5.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c10\cfg\cfg_r5.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c10\callback\callback.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r5c10\case\case_ALM_StateMgrQueryBboms.h">
+      <Filter>case</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\test_r5c10\cmd\cmddef.inc">
+      <Filter>cmd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
