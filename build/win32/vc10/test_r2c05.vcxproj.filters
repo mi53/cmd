@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lic_inc">
+      <UniqueIdentifier>{d057f668-68fe-429c-bc11-e459dcd7c232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="case">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{34ce7bc8-c543-4f57-a260-722f80f6cdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\test_r2c05\lic_inc\lic_inc.c">
+      <Filter>lic_inc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r2c05\case\case.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r2c05\case\case_esn.c">
+      <Filter>case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r2c05\cmd\cmdimpl.c">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r2c05\callback\callback.c">
+      <Filter>callback</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test_r2c05\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\test_r2c05\lic_inc\lic_inc.h">
+      <Filter>lic_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r2c05\case\case.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r2c05\case\case_cdts.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r2c05\case\case_esn.h">
+      <Filter>case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r2c05\cmd\cmd_c05.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r2c05\cfg\cfg_c05.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test_r2c05\callback\callback.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\test_r2c05\cmd\cmddef.inc">
+      <Filter>cmd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
