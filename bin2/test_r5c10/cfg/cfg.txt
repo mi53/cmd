@@ -1,0 +1,7 @@
+//配置 配置项 类型 默认值 描述
+CfgAdd CFG_ESN                          TYPE_STR "E67A8E1618B11A01C5DD4842DB991A5AF8945A3D"             "ESN"
+CfgAdd CFG_PS                           TYPE_STR "ps_file/ps.bin"                                       "保密文件路径" 
+CfgAdd CFG_PS_TMP                       TYPE_STR "ps_file/ps_TMP.bin"                                   "模拟系统复位，备份保密文件,保密文件路径" 
+CfgAdd CFG_PRD_DFLT                     TYPE_STR "cfg/cfg_prdinfo0.txt"                                 "默认的产品配置文件"
+
+execf cfg/cfg_cmd.txt
