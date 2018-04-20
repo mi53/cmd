@@ -1,0 +1,98 @@
+//0.执行前，要先配置产品信息
+execf cfg/cfg_prdinfo0.txt
+execf cfg/cfg_prdinfo3.txt
+execf cfg/cfg_prdinfo8.txt
+execf cfg/cfg_prdinfo10.txt
+//1.执行前，要确定是否继承重启前的数据，不继承时需要删除保密文件
+//psrm
+
+//2.需要设置时间
+timeset 2000-01-15-18-00-00
+//3.启动license
+ALM_AdapterBaseFuncs
+ALM_AdapterOtherFuncs
+ALM_PsCfgSet 4 10 10 
+ALM_LogSetLevel
+//启动ALM、操作产品时，不写保密文件
+ALM_Start 0
+//启动ALM、操作产品时，写保密文件
+//ALM_Start 1
+
+//4.产品操作
+//产品0的操作
+ALM_PrdMgrAdd 0 cfg/cfg_prdinfo0.txt
+ALM_StateMgrSetCheckCfgs 0 0 1 1 0 0
+ALM_StateMgrSetCheckCfgs 0 1 0 0 0 0
+ALM_StateMgrSetCheckCfgs 0 2 1 1 0 0
+ALM_StateMgrSetCheckCfgs 0 3 1 1 0 0
+ALM_StateMgrSetCheckCfgs 0 4 1 1 0 0
+ALM_LicEmCfg 0
+ALM_PrdMgrRecover 0
+//SPC002B015之后添加使用
+ALM_PsWrite
+ALM_StateMgrSetCheckCfgs 0 0 0 1 0 0
+ALM_StateMgrSetCheckCfgs 0 1 0 0 0 0
+ALM_StateMgrSetCheckCfgs 0 2 1 1 0 0
+ALM_StateMgrSetCheckCfgs 0 3 0 1 0 0
+ALM_StateMgrSetCheckCfgs 0 4 0 1 0 0
+
+//ALM_LicGeneralRevoke 0
+//ALM_LicGeneralCmp 0 license/dopra1_normal_many_items_720_.xml
+//ALM_LicGeneralVerify 0 license/dopra1_normal_many_items_720_.xml
+//ALM_LicGeneralActive 0 license/dopra1_normal_many_items_720_.xml
+
+//产品3的操作
+ALM_PrdMgrAdd 3 cfg/cfg_prdinfo3.txt
+ALM_LicEmCfg 3
+ALM_StateMgrSetCheckCfgs 3 0 1 1 0 0
+ALM_StateMgrSetCheckCfgs 3 1 0 0 0 0
+ALM_StateMgrSetCheckCfgs 3 2 1 1 0 0
+ALM_StateMgrSetCheckCfgs 3 3 1 1 0 0
+ALM_StateMgrSetCheckCfgs 3 4 1 1 0 0
+ALM_PrdMgrRecover 3
+ALM_PsWrite
+ALM_StateMgrSetCheckCfgs 3 0 0 1 0 0
+ALM_StateMgrSetCheckCfgs 3 1 0 0 0 0
+ALM_StateMgrSetCheckCfgs 3 2 1 1 0 0
+ALM_StateMgrSetCheckCfgs 3 3 0 1 0 0
+ALM_StateMgrSetCheckCfgs 3 4 0 1 0 0
+
+//ALM_LicGeneralCmp 3 license/dopra1_normal_many_items_720.xml
+//ALM_LicGeneralVerify 3 license/dopra1_normal_many_items_720.xml
+//ALM_LicGeneralActive 3 license/dopra1_normal_many_items_720.xml
+
+//ALM_PrdMgrDisable 3
+//ALM_PrdMgrDel 3
+//ALM_PrdMgrPsDel 3
+//ALM_PrdMgrAdd 3 cfg/cfg_prdinfo3.txt
+//ALM_LicEmCfg 3
+//ALM_StateMgrSetCheckCfgs 3 0 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 3 1 0 0 0 0
+//ALM_StateMgrSetCheckCfgs 3 2 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 3 3 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 3 4 1 1 0 0
+//ALM_PrdMgrRecover 3
+//ALM_PsWrite
+
+//产品8的操作
+//ALM_PrdMgrAdd 8
+//ALM_LicEmCfg 8
+//ALM_StateMgrSetCheckCfgs 8 0 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 8 1 0 0 0 0
+//ALM_StateMgrSetCheckCfgs 8 2 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 8 3 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 8 4 1 1 0 0
+//ALM_PrdMgrRecover 8
+//ALM_PsWrite
+
+////产品10的操作
+//ALM_PrdMgrAdd 10
+//ALM_StateMgrSetCheckCfgs 10 0 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 10 1 0 0 0 0
+//ALM_StateMgrSetCheckCfgs 10 2 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 10 3 1 1 0 0
+//ALM_StateMgrSetCheckCfgs 10 4 1 1 0 0
+//ALM_LicEmCfg 10
+//ALM_PrdMgrRecover 10
+////SPC002B015之后添加使用
+//ALM_PsWrite
