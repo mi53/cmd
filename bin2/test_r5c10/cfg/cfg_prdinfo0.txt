@@ -1,0 +1,30 @@
+
+//配置 配置项 类型 默认值 描述
+//CfgAdd CFG_PRD_ID                  TYPE_INT "0"                    "默认的产品编号"
+//CfgAdd CFG_PRD_ID_STR              TYPE_STR "0"                    "默认的产品编号"
+
+//产品配置 产品ID 配置项 类型 默认值 描述
+PrdCfgAdd 0 CFG_PRD_NAME                        TYPE_STR "ProductName"                             "默认产品名"
+PrdCfgAdd 0 CFG_PRD_VER                         TYPE_STR "ProductVer"                           "默认产品版本"
+PrdCfgAdd 0 CFG_KEY                             TYPE_STR "license/key/dflt.txt"               "常用密钥"
+PrdCfgAdd 0 CFG_LK                              TYPE_STR "license/ANY/ANY_DEMO_8.dat"       "常用License"
+PrdCfgAdd 0 CFG_PS_R2C05                        TYPE_STR "ps_file/r2c05/ps_prd0.bin"               "保密文件路径" 
+PrdCfgAdd 0 CFG_PS_C01_1                        TYPE_STR "ps_file/c01/ps1_prd0.bin"                "保密文件路径" 
+PrdCfgAdd 0 CFG_PS_C01_2                        TYPE_STR "ps_file/c01/ps2_prd0.bin"                "保密文件路径"
+PrdCfgAdd 0 CFG_PS_R2C05_TMP                    TYPE_STR "ps_file/r2c05/ps_prd0_TMP.bin"           "模拟系统复位，备份保密文件,保密文件路径"
+PrdCfgAdd 0 CFG_PS_C01_1_TMP                    TYPE_STR "ps_file/c01/ps1_prd0_TMP.bin"            "模拟系统复位，备份保密文件,保密文件路径"
+PrdCfgAdd 0 CFG_PS_C01_2_TMP                    TYPE_STR "ps_file/c01/ps2_prd0_TMP.bin"            "模拟系统复位，备份保密文件,保密文件路径"
+
+PrdCfgAdd 0 CFG_PRD_SAFETIME_ENABLE TYPE_INT                            "0"            "时间安全性"
+PrdCfgAdd 0 CFG_PRD_MINVALUE_ENABLE TYPE_INT                            "1"            "部分过期是否使用最小值"
+PrdCfgAdd 0 CFG_PRD_TIXTIME_ENABLE TYPE_INT                             "1"            "开启取临时项"
+PrdCfgAdd 0 CFG_PRD_ESNVERMISONCE_ENABLE TYPE_INT                       "1"            "ESN或版本不匹配不允许重复激活"
+PrdCfgAdd 0 CFG_PRD_R5C01CMP_ENABLE TYPE_INT                            "1"            "兼容r5c01比较接口规则"
+
+: echo 添加BBOM到临时对象。
+
+PrdBbomTempCls
+
+//命令 			BBOM编号  	名称 			类型(1功能项） 	默认值	最小值	最大值
+PrdBbomTempAdd 1 "LLT1HSPM01" 0 100 0 100
+PrdBbomTempAdd 10 "basicres1" 0 100 0 100
