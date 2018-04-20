@@ -1,0 +1,56 @@
+
+: echo 添加BBOM的紧急配置到临时对象。
+
+EmStickBbomTempCls
+
+//命令 				名称 		类型(1功能项） 	值
+EmStickBbomTempAdd basicres1 0 100
+EmStickBbomTempAdd basicres2 0 100
+EmStickBbomTempAdd basicres3 0 100
+EmStickBbomTempAdd basicres4 0 100
+EmStickBbomTempAdd basicres5 0 100
+EmStickBbomTempAdd basicres6 0 100
+EmStickBbomTempAdd basicres7 0 100
+EmStickBbomTempAdd basicres8 0 100
+EmStickBbomTempAdd basicres9 0 100
+EmStickBbomTempAdd basicres10 0 100
+EmStickBbomTempAdd basicres11 0 100
+EmStickBbomTempAdd basicres12 0 100
+EmStickBbomTempAdd basicres13 0 100
+EmStickBbomTempAdd basicres14 0 100
+EmStickBbomTempAdd basicres15 0 100
+EmStickBbomTempAdd basicres16 0 100
+EmStickBbomTempAdd basicres17 0 100
+EmStickBbomTempAdd basicres18 0 100
+EmStickBbomTempAdd basicres19 0 100
+EmStickBbomTempAdd basicres20 0 100
+EmStickBbomTempAdd basicres21 0 100
+EmStickBbomTempAdd basicres22 0 100
+EmStickBbomTempAdd basicres23 0 100
+EmStickBbomTempAdd basicres24 0 100
+EmStickBbomTempAdd basicres25 0 100
+EmStickBbomTempAdd basicres26 0 100
+EmStickBbomTempAdd basicres27 0 100
+EmStickBbomTempAdd basicres28 0 100
+EmStickBbomTempAdd basicres29 0 100
+EmStickBbomTempAdd basicres30 0 100
+EmStickBbomTempAdd basicres31 0 100
+EmStickBbomTempAdd basicres32 0 100
+EmStickBbomTempAdd basicres33 0 100
+EmStickBbomTempAdd basicres34 0 100
+EmStickBbomTempAdd basicres35 0 100
+EmStickBbomTempAdd basicres36 0 100
+EmStickBbomTempAdd basicres37 0 100
+EmStickBbomTempAdd basicres38 0 100
+EmStickBbomTempAdd basicres39 0 100
+EmStickBbomTempAdd basicres40 0 100
+EmStickBbomTempAdd basicres41 0 100
+EmStickBbomTempAdd basicres42 0 100
+EmStickBbomTempAdd basicres43 0 100
+EmStickBbomTempAdd basicres44 0 100
+EmStickBbomTempAdd basicres45 0 100
+EmStickBbomTempAdd basicres46 0 100
+EmStickBbomTempAdd basicres47 0 100
+EmStickBbomTempAdd basicres48 0 100
+EmStickBbomTempAdd basicres49 0 100
+EmStickBbomTempAdd basicres50 0 100
